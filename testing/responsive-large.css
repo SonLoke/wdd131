@@ -1,0 +1,11 @@
+@media only screen and (min-width: 500px) {
+    h1 {
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    #random-div {
+        flex-direction: row;
+    }
+}
