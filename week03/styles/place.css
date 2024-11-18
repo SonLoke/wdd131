@@ -1,0 +1,126 @@
+/* general */
+:root {
+    --color1: #a41b15;
+    --color2: #e6f0f1;
+    --color3: #ffb9c4;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    /* max-width: 1255px;
+    max-height: 895px; */
+}
+
+header {
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    background-color: var(--color2);
+
+    h1 {
+        border: 1px solid var(--color1);
+        border-radius: 100%;
+        width: 11rem;
+        height: 5rem;
+        background-color: var(--color1);
+        color: var(--color2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+footer {
+    padding: .5rem;
+    text-align: center;
+    color: var(--color2);
+    background-color: var(--color1);
+}
+
+/* Mobile view */
+main {
+    background-color: var(--color1);
+    padding: .5rem 0 0 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero_img {
+    width: 400px;
+    height: auto;
+    margin: 0;
+}
+
+picture {
+    background-color: var(--color3);
+}
+
+section {
+    border-top: .3px solid black;
+    text-align: center;
+    width: 25rem;
+    background-color: white;
+}
+
+#weather {
+    img {
+        height: 3rem;
+    }
+}
+
+#names, #windChillResult {
+    font-weight: bolder;
+}
+
+
+/* Wide view */
+@media only screen and (min-width: 600px) {
+    main {
+        justify-content: space-between;
+    }
+
+    #hero_img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        align-self: center;
+    }
+
+    section {
+        position: absolute;
+        background-color: #e6f0f1cc;
+    }
+
+    #data {
+        top: 30%;
+        left: 3%;
+    }
+
+    #weather {
+        top: 95%;
+        left: 73%;
+
+    }
+
+    .panel_tl {
+        display: flex;
+
+        background-color: var(--color3);
+        margin: 0.5rem;
+        margin-left: -1rem;
+        padding: .5rem;
+        color: var(--color2);
+        justify-content: flex-start;
+        height: 48px;
+        align-items: center;
+    }
+
+    h2 {
+        margin: 0;
+        color: white;
+    }
+}
