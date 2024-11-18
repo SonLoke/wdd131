@@ -1,0 +1,100 @@
+:root {
+    --p-color: #064070;
+    --s-color: #f5f5f5;
+    --acc-color: #1d3232;
+
+}
+
+* {
+    margin: auto 0;
+    border: 0;
+    padding: 0;
+    /* font-family: ; */
+}
+
+header {
+    background-color: var(--p-color);
+    color: var(--s-color);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--acc-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    
+    a {
+        color: var(--s-color);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--acc-color);
+        background-color: var(--s-color);
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.card {
+    margin: 1rem;
+    border: 1px solid darkgray;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem hsla(0, 0%, 0%, 0.078);
+
+    img {
+        max-width: 150px;
+        margin: 1rem;
+        box-shadow: 0.2rem 0.2rem hsla(0, 0%, 0%, 0.078);
+        border-radius: 0.5rem;
+    }
+
+    h1 {
+        background-color: var(--p-color);
+        color: var(--s-color);
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    div {
+        display: grid;
+        grid-template-areas: 1fr 1fr 1fr 1fr;
+
+        h1, h2 {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            text-align: center;
+        }
+
+        #about_me {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin: 1rem;
+        }
+
+        #profile_pic {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        #flag_pic {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        p {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+    }
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--p-color);
+    color: var(--s-color);
+    text-align: center;
+}
