@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form&review.css">
+    <script src="scripts/form&review.js" defer></script>
+    <title>Product Review Form</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <form action="review.html" method="get">
+        <div class="container_div">
+            <label for="productName">Product name</label>
+            <select name="productName" id="productName" required>
+                <option value="" disabled selected>Select a Product</option>
+                <!-- add items from JS script Array -->
+            </select>
+        </div>
+
+         <div class="container_div" id="overallRating">
+            <label for="overallRating">Ratings</label>
+            <div>
+                <label for="1*">*</label>
+                <input type="radio" id="1*" name="ratings" value="*" required>
+            </div>
+
+            <div>
+                <label for="2*">**</label>
+                <input type="radio" id="2*" name="ratings" value="**">
+            </div>
+
+            <div>
+                <label for="3*">***</label>
+                <input type="radio" id="3*" name="ratings" value="***">
+            </div>
+
+            <div>
+                <label for="4*">****</label>
+                <input type="radio" id="4*" name="ratings" value="****">
+            </div>
+         </div>
+
+         <div class="container_div">
+            <label for="">Date of Installation</label>
+            <input type="date" name="date_of_installation" id="date_of_installation">
+         </div>
+
+         <div class="container_div" id="useful_features">
+            <!-- <p>Which features did you find useful in the product? (Check all that apply)</p> -->
+             <label for="useful_features">Which features did you find useful in the product? (Check all that apply)</label>
+
+            <div>
+                <input type="checkbox" name="useful_features" id="durability" value="durability">
+                <label for="durability">Durability</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="useful_features" id="ease_of_use" value="ease_of_use">
+                <label for="ease_of_use">Ease of Use</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="useful_features" id="performance" value="performance">
+                <label for="performance">Performance</label>
+            </div> 
+            
+            <div>
+                <input type="checkbox" name="useful_features" id="design" value="design">
+                <label for="design">Design</label>
+            </div>
+         </div>
+
+         <div class="container_div">
+            <label for="written_review">Written Review (optional)</label>
+            <textarea name="written_review" id="written_review"></textarea>
+         </div>
+
+         <div class="container_div">
+            <label for="your_name">Your Name (optional)</label>
+            <input type="text" name="your_name" id="your_name">
+         </div>
+
+         <div class="container_div">
+            <input type="submit" name="submit" id="submit" value="Post Review">
+         </div>
+    </form>
+
+    <footer>
+        <p>&copy;
+            <span id="currentyear"></span>|
+            Lucas Caldas da Costa | Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

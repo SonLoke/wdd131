@@ -1,0 +1,41 @@
+:root {
+    --color1: #00008b;
+    --color2: #98c9ec;
+}
+
+* {
+    margin: 0;
+}
+
+header, footer {
+    background-color: var(--color1);
+    color: white;
+    text-align: center;
+}
+
+form {
+    background-color: var(--color2);
+    margin: .5rem 0;
+    border-radius: .5rem;
+    max-width: 500px;
+}
+
+.container_div {
+    /* margin: .5rem; */
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    font-weight: bolder;
+    font-size: larger;
+    color: white;
+    background-color: var(--color1);
+}
+
+#submit:hover {
+    background-color: white;
+    color: var(--color1);
+    cursor: pointer;
+}
