@@ -36,7 +36,7 @@ const products = [
 function addProduct(product) {
     // console.log(temple);
 
-    document.getElementById("productName").innerHTML += `<option value="${product.name}">${product.name}</option>`;
+    document.getElementById("productName").innerHTML += `<option value="${product.id}">${product.name}</option>`;
   }
 
   products.forEach(addProduct);
